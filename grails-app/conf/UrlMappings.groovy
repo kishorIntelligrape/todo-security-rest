@@ -7,11 +7,13 @@ class UrlMappings {
             }
         }
 
-        "/api/$controller/$action?/$id?(.$format)?" {
+        /*"/api/$controller/$action?/$id?(.$format)?" {
             constraints {
                 // apply constraints here
             }
-        }
+        }*/
+
+        "/api/todos" (resources: 'todo')
 
         "/todo/index" (controller: 'todo', action: 'index')
 
