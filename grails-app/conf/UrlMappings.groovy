@@ -14,6 +14,7 @@ class UrlMappings {
         }*/
 
         "/api/todos" (resources: 'todo')
+        "/api/todos" (resources: 'user')
 
         "/todo/index" (controller: 'todo', action: 'index')
 
